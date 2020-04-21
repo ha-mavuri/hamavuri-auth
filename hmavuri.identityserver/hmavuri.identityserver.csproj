@@ -5,6 +5,13 @@
     <UserSecretsId>aspnet-hmavuri.identityserver-8F70E21B-EB41-408F-B2A2-6D47FF63C07E</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.cs" />
+    <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs" />
+    <Compile Remove="Migrations\20200421073643_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200421073643_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.1" />
