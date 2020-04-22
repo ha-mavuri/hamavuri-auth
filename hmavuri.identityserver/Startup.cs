@@ -12,7 +12,7 @@ using hmavuri.identityserver.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using hmavuri.identityserver.Models;
+using hmavuri.identityserver.models;
 
 namespace hmavuri.identityserver
 {

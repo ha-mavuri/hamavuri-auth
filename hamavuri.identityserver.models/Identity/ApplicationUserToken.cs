@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace hmavuri.identityserver.Models
+namespace hmavuri.identityserver.models
 {
-    public class ApplicationRole : IdentityRole
+    public class ApplicationUserToken : IdentityUserToken<Guid>
     {
-        public new Guid Id { get; set; }
     }
 }

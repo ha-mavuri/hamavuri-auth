@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace hmavuri.identityserver.Models
+namespace hmavuri.identityserver.models
 {
-    public class ApplicationUserToken : IdentityUserToken<Guid>
+    public class ApplicationUserLogin : IdentityUserLogin<Guid>
     {
     }
 }

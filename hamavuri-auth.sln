@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hmavuri.identityserver", "hmavuri.identityserver\hmavuri.identityserver.csproj", "{363AC0B5-27E9-420A-ABA6-B0A12ED34E94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hmavuri.identityserver.admin", "hmavuri.identityserver\hmavuri.identityserver.admin.csproj", "{363AC0B5-27E9-420A-ABA6-B0A12ED34E94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hamavuri.identityserver.services", "hmavuri.identityserver.services\hamavuri.identityserver.services.csproj", "{F9F807FD-4B73-4656-9C1C-D79DEE5D6D9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hamavuri.identityserver.repositories", "hamavuri.identityserver.repositories\hamavuri.identityserver.repositories.csproj", "{0E443ED5-4D15-43E1-ADCF-1BB45F53BA4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hamavuri.identityserver.models", "hamavuri.identityserver.models\hamavuri.identityserver.models.csproj", "{0E668B34-5C25-439C-8AD4-09FC78A4F3DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hamavuri.identityserver.api", "hamavuri.identityserver.api\hamavuri.identityserver.api.csproj", "{22CCE836-DD3F-4DCF-98C5-0146D6D9845C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{363AC0B5-27E9-420A-ABA6-B0A12ED34E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{363AC0B5-27E9-420A-ABA6-B0A12ED34E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{363AC0B5-27E9-420A-ABA6-B0A12ED34E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F807FD-4B73-4656-9C1C-D79DEE5D6D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F807FD-4B73-4656-9C1C-D79DEE5D6D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F807FD-4B73-4656-9C1C-D79DEE5D6D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F807FD-4B73-4656-9C1C-D79DEE5D6D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E443ED5-4D15-43E1-ADCF-1BB45F53BA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E443ED5-4D15-43E1-ADCF-1BB45F53BA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E443ED5-4D15-43E1-ADCF-1BB45F53BA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E443ED5-4D15-43E1-ADCF-1BB45F53BA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E668B34-5C25-439C-8AD4-09FC78A4F3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E668B34-5C25-439C-8AD4-09FC78A4F3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E668B34-5C25-439C-8AD4-09FC78A4F3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E668B34-5C25-439C-8AD4-09FC78A4F3DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22CCE836-DD3F-4DCF-98C5-0146D6D9845C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22CCE836-DD3F-4DCF-98C5-0146D6D9845C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22CCE836-DD3F-4DCF-98C5-0146D6D9845C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22CCE836-DD3F-4DCF-98C5-0146D6D9845C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

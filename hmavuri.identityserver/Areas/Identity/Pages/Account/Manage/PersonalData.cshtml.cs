@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using hmavuri.identityserver.Models;
+using hmavuri.identityserver.models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;

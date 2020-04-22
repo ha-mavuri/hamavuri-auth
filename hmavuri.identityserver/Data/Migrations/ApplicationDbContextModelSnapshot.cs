@@ -14,11 +14,11 @@ namespace hmavuri.identityserver.Data.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.1")
+                .HasAnnotation("ProductVersion", "3.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationRole", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationRole", b =>
             {
                 b.Property<Guid>("Id")
                     .HasColumnType("uniqueidentifier");
@@ -45,7 +45,7 @@ namespace hmavuri.identityserver.Data.Migrations
                 b.ToTable("ApplicationRoles");
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationRoleClaim", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationRoleClaim", b =>
             {
                 b.Property<Guid>("Id")
                     .ValueGeneratedOnAdd()
@@ -69,7 +69,7 @@ namespace hmavuri.identityserver.Data.Migrations
                 b.ToTable("ApplicationRoleClaims");
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUser", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUser", b =>
             {
                 b.Property<Guid>("Id")
                     .HasColumnType("uniqueidentifier");
@@ -138,7 +138,7 @@ namespace hmavuri.identityserver.Data.Migrations
                 b.ToTable("ApplicationUsers");
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUserClaim", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUserClaim", b =>
             {
                 b.Property<Guid>("uniqueidentifier")
                     .ValueGeneratedOnAdd()
@@ -162,7 +162,7 @@ namespace hmavuri.identityserver.Data.Migrations
                 b.ToTable("ApplicationUserClaims");
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUserLogin", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUserLogin", b =>
             {
                 b.Property<string>("LoginProvider")
                     .HasColumnType("nvarchar(128)")
@@ -186,7 +186,7 @@ namespace hmavuri.identityserver.Data.Migrations
                 b.ToTable("ApplicationUserLogins");
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUserRole", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUserRole", b =>
             {
                 b.Property<Guid>("UserId")
                     .HasColumnType("uniqueidentifier");
@@ -201,7 +201,7 @@ namespace hmavuri.identityserver.Data.Migrations
                 b.ToTable("ApplicationUserRoles");
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUserToken", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUserToken", b =>
             {
                 b.Property<Guid>("UserId")
                     .HasColumnType("uniqueidentifier");
@@ -222,51 +222,51 @@ namespace hmavuri.identityserver.Data.Migrations
                 b.ToTable("ApplicationUserTokens");
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationRoleClaim", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationRoleClaim", b =>
             {
-                b.HasOne("hmavuri.identityserver.Models.ApplicationRole", null)
+                b.HasOne("hmavuri.identityserver.models.ApplicationRole", null)
                     .WithMany()
                     .HasForeignKey("RoleId")
                     .OnDelete(DeleteBehavior.Cascade)
                     .IsRequired();
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUserClaim", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUserClaim", b =>
             {
-                b.HasOne("hmavuri.identityserver.Models.ApplicationUser", null)
+                b.HasOne("hmavuri.identityserver.models.ApplicationUser", null)
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade)
                     .IsRequired();
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUserLogin", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUserLogin", b =>
             {
-                b.HasOne("hmavuri.identityserver.Models.ApplicationUser", null)
+                b.HasOne("hmavuri.identityserver.models.ApplicationUser", null)
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade)
                     .IsRequired();
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUserRole", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUserRole", b =>
             {
-                b.HasOne("hmavuri.identityserver.Models.ApplicationRole", null)
+                b.HasOne("hmavuri.identityserver.models.ApplicationRole", null)
                     .WithMany()
                     .HasForeignKey("RoleId")
                     .OnDelete(DeleteBehavior.Cascade)
                     .IsRequired();
 
-                b.HasOne("hmavuri.identityserver.Models.ApplicationUser", null)
+                b.HasOne("hmavuri.identityserver.models.ApplicationUser", null)
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade)
                     .IsRequired();
             });
 
-            modelBuilder.Entity("hmavuri.identityserver.Models.ApplicationUserToken", b =>
+            modelBuilder.Entity("hmavuri.identityserver.models.ApplicationUserToken", b =>
             {
-                b.HasOne("hmavuri.identityserver.Models.ApplicationUser", null)
+                b.HasOne("hmavuri.identityserver.models.ApplicationUser", null)
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade)

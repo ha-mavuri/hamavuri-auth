@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace hmavuri.identityserver.Models
+namespace hmavuri.identityserver.models
 {
     public class ApplicationUser : IdentityUser
     {
