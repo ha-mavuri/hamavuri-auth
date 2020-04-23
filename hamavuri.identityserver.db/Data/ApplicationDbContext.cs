@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace hmavuri.identityserver.Data
+namespace hmavuri.identityserver.db.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

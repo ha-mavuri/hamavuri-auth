@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace hmavuri.identityserver.Migrations
+namespace hmavuri.identityserver.db.Migrations
 {
     public partial class InitialCreate : Migration
     {

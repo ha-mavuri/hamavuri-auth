@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using hmavuri.identityserver.Data;
+using hmavuri.identityserver.db.Data;
 
-namespace hmavuri.identityserver.Migrations
+namespace hmavuri.identityserver.db.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20200421074421_InitialCreate")]
